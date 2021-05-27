@@ -7,13 +7,13 @@ class RpslsGame { // rock-paper-scissors-whale-slackbot
 		this._players = [p1, p2]; //private var //todo: maybe change to unlimited players?
 		this._turns = [null, null];
 		this._scores = [0, 0];
-		this._scoreToWin = 2;
+		this._scoreToWin = 3;
 		// this._winList = [null, null]; // set up with predefined indices fr potential parallelism in the future
 		
 
 		this._computerTurns = ["rock", "paper", "scissors", "whale", "slackbot"]; //todo: make this a class var?
 
-		this._sendToPlayers('message', '🪨 Rock 🪨 - 📄 Paper 📄 - ✂️ Scissors ✂️ - 🐳 Whale 🐳 - 🤖 Slackbot 🤖 - Match Starts!');
+		this._sendToPlayers('message', '🪨 Rock 🪨 - 📄 Paper 📄 - ✂️ Scissors ✂️ - 🐳 Whale 🐳 - 🤖 Slackbot 🤖 - Match Starts! First person to reach 3 points wins!');
 
 		this._players.forEach((player, idx) => {
 			player.on('turn', (turn) => {
