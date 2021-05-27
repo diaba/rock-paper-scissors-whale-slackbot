@@ -1,4 +1,4 @@
-// initially taken from https://github.com/Juriy/gamedev/blob/master/rps/client/src/client.js to learn node.js 
+// initially taken from https://github.com/Juriy/gamedev/blob/master/rps/client/src/client.js to learn node.js - after which i added my own stuff (e.g. scoring + more play options + automatic computer plays) + changed things
 
 const writeEvent = (text) => {
   // <ul> element
